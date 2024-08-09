@@ -1,0 +1,9 @@
+# Directories
+.vscode/
+tmp/
+
+# Files
+*.log
+*.sw?
+*.code-workspace
+desktop.ini
