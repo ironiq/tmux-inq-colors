@@ -1,1 +1,1 @@
-# Template GitHub repository
+# IroNiQ's tmux themes repository
