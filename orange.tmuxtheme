@@ -1,0 +1,143 @@
+#
+# Orange theme
+#
+
+# Theme format options
+set -goq @inq-colours-status-left-area-left-format "#S"
+set -goq @inq-colours-status-left-area-middle-format ""
+set -goq @inq-colours-status-left-area-right-format ""
+set -goq @inq-colours-status-right-area-left-format "#H"
+set -goq @inq-colours-status-right-area-middle-format "%H:%M"
+set -goq @inq-colours-status-right-area-right-format "%Y-%m-%d"
+set -goq @inq-colours-window-status-current-format " #I:#W#{?window_flags,#{window_flags}, } "
+set -goq @inq-colours-window-status-format " #I:#W#{?window_flags,#{window_flags}, } "
+
+# Customizable prefixes and suffixes for @inq-colours-* format options
+set -goq @inq-colours-status-left-prefix ""
+set -goq @inq-colours-status-left-suffix ""
+set -goq @inq-colours-status-left-area-left-prefix "[S:"
+set -goq @inq-colours-status-left-area-left-suffix "]"
+set -goq @inq-colours-status-left-area-middle-prefix ""
+set -goq @inq-colours-status-left-area-middle-suffix ""
+set -goq @inq-colours-status-left-area-right-prefix ""
+set -goq @inq-colours-status-left-area-right-suffix " "
+
+set -goq @inq-colours-status-right-prefix ""
+set -goq @inq-colours-status-right-suffix ""
+set -goq @inq-colours-status-right-area-left-prefix " "
+set -goq @inq-colours-status-right-area-left-suffix " "
+set -goq @inq-colours-status-right-area-middle-prefix " "
+set -goq @inq-colours-status-right-area-middle-suffix " "
+set -goq @inq-colours-status-right-area-right-prefix ""
+set -goq @inq-colours-status-right-area-right-suffix " "
+
+set -goq @inq-colours-window-status-current-prefix ""
+set -goq @inq-colours-window-status-current-suffix ""
+
+set -goq @inq-colours-window-status-prefix ""
+set -goq @inq-colours-window-status-suffix ""
+
+# Theme colours
+set -goq  @inq-colours-status-bg "#ff9900"
+set -goq  @inq-colours-status-fg "#030200"
+set -goqF @inq-colours-status-sep-colour "#{@inq-colours-status-fg}"
+
+set -goqF @inq-colours-clock-mode-colour "#{@inq-colours-status-bg}"
+set -goq  @inq-colours-clock-mode-style 24
+
+set -goq  @inq-colours-display-panes-active-colour default
+set -goq  @inq-colours-display-panes-colour default
+
+set -goq  @inq-colours-message-bg black
+set -goqF @inq-colours-message-fg "#{@inq-colours-status-bg}"
+set -goq  @inq-colours-message-command-bg default
+set -goq  @inq-colours-message-command-fg default
+
+set -goq  @inq-colours-mode-bg "#472100"
+set -goq  @inq-colours-mode-fg "#ffffff"
+
+set -goq  @inq-colours-pane-active-border-bg default
+set -goqF @inq-colours-pane-active-border-fg "#{@inq-colours-status-bg}"
+set -goq  @inq-colours-pane-border-bg default
+set -goqF @inq-colours-pane-border-fg "#{@inq-colours-status-bg}"
+
+set -goq  @inq-colours-status-left-bg default
+set -goq  @inq-colours-status-left-fg default
+set -goq  @inq-colours-status-left-area-left-bg default
+set -goq  @inq-colours-status-left-area-left-fg default
+set -goq  @inq-colours-status-left-area-right-bg default
+set -goq  @inq-colours-status-left-area-right-fg default
+set -goq  @inq-colours-status-left-area-middle-bg default
+set -goq  @inq-colours-status-left-area-middle-fg default
+
+set -goq  @inq-colours-status-right-bg default
+set -goq  @inq-colours-status-right-fg default
+set -goq  @inq-colours-status-right-area-left-bg "#072903"
+set -goq  @inq-colours-status-right-area-left-fg white
+set -goq  @inq-colours-status-right-area-right-bg "#000338"
+set -goqF @inq-colours-status-right-area-right-fg white
+set -goqF @inq-colours-status-right-area-middle-bg "#{@inq-colours-status-right-area-right-bg}"
+set -goqF @inq-colours-status-right-area-middle-fg white
+
+set -goq  @inq-colours-window-status-activity-bg yellow
+set -goq  @inq-colours-window-status-activity-fg black
+set -goq  @inq-colours-window-status-current-bg "#{@inq-colours-status-fg}"
+set -goq  @inq-colours-window-status-current-fg "#{@inq-colours-status-bg}"
+
+# Apply prefixes and suffixes to @inq-colours-* format options
+set -gqF @inq-colours-status-left-area-left-format "#{@inq-colours-status-left-area-left-prefix}#{@inq-colours-status-left-area-left-format}#{@inq-colours-status-left-area-left-suffix}"
+set -gqF @inq-colours-status-left-area-middle-format "#{@inq-colours-status-left-area-middle-prefix}#{@inq-colours-status-left-area-middle-format}#{@inq-colours-status-left-area-middle-suffix}"
+set -gqF @inq-colours-status-left-area-right-format "#{@inq-colours-status-left-area-right-prefix}#{@inq-colours-status-left-area-right-format}#{@inq-colours-status-left-area-right-suffix}"
+
+set -gqF @inq-colours-status-right-area-left-format "#{@inq-colours-status-right-area-left-prefix}#{@inq-colours-status-right-area-left-format}#{@inq-colours-status-right-area-left-suffix}"
+set -gqF @inq-colours-status-right-area-middle-format "#{@inq-colours-status-right-area-middle-prefix}#{@inq-colours-status-right-area-middle-format}#{@inq-colours-status-right-area-middle-suffix}"
+set -gqF @inq-colours-status-right-area-right-format "#{@inq-colours-status-right-area-right-prefix}#{@inq-colours-status-right-area-right-format}#{@inq-colours-status-right-area-right-suffix}"
+
+set -gqF @inq-colours-window-status-current-format "#{@inq-colours-window-status-current-prefix}#{@inq-colours-window-status-current-format}#{@inq-colours-window-status-current-suffix}"
+set -gqF @inq-colours-window-status-format "#{@inq-colours-window-status-prefix}#{@inq-colours-window-status-format}#{@inq-colours-window-status-suffix}"
+
+# Theme options
+set -goq  @inq-colours-status-interval 15
+set -goq  @inq-colours-status-justify left
+
+set -goqF @inq-colours-status-left-format "#[fg=#{@inq-colours-status-left-area-left-fg},bg=#{@inq-colours-status-left-area-left-bg}]#{@inq-colours-status-left-area-left-format}#[fg=#{@inq-colours-status-left-area-middle-fg},bg=#{@inq-colours-status-left-area-middle-bg}]#{@inq-colours-status-left-area-middle-format}#[fg=#{@inq-colours-status-left-area-right-fg},bg=#{@inq-colours-status-left-area-right-bg}]#{@inq-colours-status-left-area-right-format}#[fg=#{@inq-colours-status-sep-colour}]» "
+set -goq  @inq-colours-status-left-length 40
+
+set -goqF @inq-colours-status-right-format "#[fg=#{@inq-colours-status-sep-colour}]« #[fg=#{@inq-colours-status-right-area-left-fg},bg=#{@inq-colours-status-right-area-left-bg}]#{@inq-colours-status-right-area-left-format}#[fg=#{@inq-colours-status-right-area-middle-fg},bg=#{@inq-colours-status-right-area-middle-bg}]#{@inq-colours-status-right-area-middle-format}#[fg=#{@inq-colours-status-right-area-right-fg},bg=#{@inq-colours-status-right-area-right-bg}]#{@inq-colours-status-right-area-right-format}"
+set -goq  @inq-colours-status-right-length 100
+
+set -goqF @inq-colours-window-status-current-format " #{@inq-colours-window-status-current-format} "
+set -goqF @inq-colours-window-status-format " #{@inq-colours-window-status-format} "
+set -goq  @inq-colours-window-status-separator ""
+
+# Apply prefixes and suffixes to @inq-colours-* format options
+set -gqF @inq-colours-status-left "#{@inq-colours-status-left-prefix}#{@inq-colours-status-left-format}#{@inq-colours-status-left-suffix}"
+set -gqF @inq-colours-status-right "#{@inq-colours-status-right-prefix}#{@inq-colours-status-right-format}#{@inq-colours-status-right-suffix}"
+set -gqF @inq-colours-window-status-current-format "#{@inq-colours-window-status-current-prefix}#{@inq-colours-window-status-current-format}#{@inq-colours-window-status-current-suffix}"
+set -gqF @inq-colours-window-status-format "#{@inq-colours-window-status-prefix}#{@inq-colours-window-status-format}#{@inq-colours-window-status-suffix}"
+
+# Apply @inq-colours-* options to Tmux
+set -gF  display-panes-active-colour "#{@inq-colours-display-panes-active-colour}"
+set -gF  display-panes-colour "#{@inq-colours-display-panes-colour}"
+set -gF  message-command-style "fg=#{@inq-colours-message-command-fg},bg=#{@inq-colours-message-command-bg}"
+set -gF  message-style "fg=#{@inq-colours-message-fg},bg=#{@inq-colours-message-bg}"
+set -gF  status-interval "#{@inq-colours-status-interval}"
+set -gF  status-justify "#{@inq-colours-status-justify}"
+set -gF  status-left "#{@inq-colours-status-left}"
+set -gF  status-left-length "#{@inq-colours-status-left-length}"
+set -gF  status-left-style "fg=#{@inq-colours-status-left-fg},bg=#{@inq-colours-status-left-bg}"
+set -gF  status-right "#{@inq-colours-status-right}"
+set -gF  status-right-length "#{@inq-colours-status-right-length}"
+set -gF  status-right-style "fg=#{@inq-colours-status-right-fg},bg=#{@inq-colours-status-right-bg}"
+set -gF  status-style "fg=#{@inq-colours-status-fg},bg=#{@inq-colours-status-bg}"
+set -gwF clock-mode-colour "#{@inq-colours-clock-mode-colour}"
+set -gwF clock-mode-style "#{@inq-colours-clock-mode-style}"
+set -gwF mode-style "fg=#{@inq-colours-mode-fg},bg=#{@inq-colours-mode-bg}"
+set -gwF pane-active-border-style "fg=#{@inq-colours-pane-active-border-fg},bg=#{@inq-colours-pane-active-border-bg}"
+set -gwF pane-border-style "fg=#{@inq-colours-pane-border-fg},bg=#{@inq-colours-pane-border-bg}"
+set -gwF window-status-activity-style "fg=#{@inq-colours-window-status-activity-fg},bg=#{@inq-colours-window-status-activity-bg}"
+set -gwF window-status-current-format "#{@inq-colours-window-status-current-format}"
+set -gwF window-status-current-style "fg=#{@inq-colours-window-status-current-fg},bg=#{@inq-colours-window-status-current-bg}"
+set -gwF window-status-format "#{@inq-colours-window-status-format}"
+set -gwF window-status-separator "#{@inq-colours-window-status-separator}"
+
